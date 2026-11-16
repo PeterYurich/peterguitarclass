@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's Guitar Class — Online & In-Person Guitar & Ukulele Lessons in Macclesfield</title>
+    <meta name="description" content="Guitar & Ukulele lessons that deliver results. Online via Zoom & in person in Macclesfield, Cheshire, UK. Book your £5 Strategy Session today.">
+    <link rel="icon" type="image/png" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    },
+                    colors: {
+                        wood: {
+                            950: '#120C08',
+                            900: '#1C130D',
+                            850: '#241810',
+                            800: '#2E1F15',
+                            700: '#463020',
+                            600: '#63442D',
+                            200: '#E8DDD1',
+                            100: '#F4EDE4',
+                            50:  '#FAF6F0',
+                        },
+                        ember: {
+                            400: '#FBBF24',
+                            500: '#D97706',
+                            600: '#B45309',
+                            700: '#92400E',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Subtle artisanal wood-grain & warm fire-lit texture */
+        .wood-surface {
+            background-color: #160F0A;
+            background-image:
+                radial-gradient(ellipse at 20% 0%, rgba(217, 119, 6, 0.16) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 100%, rgba(180, 83, 9, 0.14) 0%, transparent 50%),
+                repeating-linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.012) 0px,
+                    rgba(255, 255, 255, 0.012) 1px,
+                    transparent 1px,
+                    transparent 14px
+                );
+        }
+        .wood-card {
+            background: linear-gradient(165deg, rgba(46, 31, 21, 0.92) 0%, rgba(28, 19, 13, 0.96) 100%);
+            border: 1px solid rgba(217, 119, 6, 0.25);
+            box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(251, 191, 36, 0.12);
+        }
+        .pyrography-plaque {
+            background: linear-gradient(135deg, #2D1E14 0%, #1D130C 100%);
+            border: 1px solid rgba(217, 119, 6, 0.35);
+            box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.65), 0 8px 20px rgba(0, 0, 0, 0.35);
+        }
+        .ember-glow {
+            box-shadow: 0 0 30px rgba(217, 119, 6, 0.35);
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .28s ease-out;
+        }
+        @keyframes sweep {
+            0%   { opacity: 0; transform: translateY(-6px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-wood-50 text-wood-900 font-sans antialiased selection:bg-ember-500 selection:text-white">
+
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 bg-wood-950/95 backdrop-blur-md border-b border-amber-500/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="LogoPGC-Transparent-White.png" alt="Peter's Guitar Class Logo" class="h-11 sm:h-12 w-auto object-contain transition duration-300 group-hover:opacity-90">
+                </a>
+
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-wood-200/80">
+                    <a href="#video-intro" class="hover:text-ember-400 transition">Watch Intro</a>
+                    <a href="#lessons" class="hover:text-ember-400 transition">Instruments</a>
+                    <a href="#approach" class="hover:text-ember-400 transition">Methodology</a>
+                    <a href="#about" class="hover:text-ember-400 transition">About Me</a>
+                    <a href="#fees" class="hover:text-ember-400 transition">Fees</a>
+                    <a href="#faq" class="hover:text-ember-400 transition">FAQ</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <a href="https://calendar.app.google/2m3gF5rvLZJniXkaA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-wood-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded-lg shadow-md transition">
+                        Book £5 Session
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section: Premium Walnut & Fire Aesthetic -->
+    <section class="wood-surface text-wood-100 relative overflow-hidden border-b border-amber-500/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <!-- Left Column: Copy + CTA -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full pyrography-plaque text-amber-300 text-xs font-semibold tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        Online via Zoom &bull; In Person in Macclesfield
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.08]">
+                        Lessons That Deliver <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-orange-400 italic">Results</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-wood-200/90 leading-relaxed max-w-2xl">
+                        If you have the will, I'll show you the way! Structured, personalized guitar &amp; ukulele lessons designed to turn you into a strong, confident player — whether you're playing your very first chords or breaking through an advanced plateau.
+                    </p>
+
+                    <!-- Strategy Session Highlights Box -->
+                    <div class="wood-card rounded-2xl p-6 sm:p-7">
+                        <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-4 border-b border-amber-500/20">
+                            <span class="font-serif text-2xl font-bold text-white">Book your Strategy Session!</span>
+                            <span class="px-3 py-1 rounded-lg bg-amber-500/20 border border-amber-400/40 text-amber-300 font-bold text-sm">Just £5</span>
+                        </div>
+                        <p class="text-sm text-wood-200 mb-3.5">And just for £5 you will:</p>
+                        <ul class="grid sm:grid-cols-2 gap-3 text-sm text-wood-100 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-amber-400 font-bold mt-0.5">&#10003;</span>
+                                <span>Evaluate your current level</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-amber-400 font-bold mt-0.5">&#10003;</span>
+                                <span>See a custom roadmap tailored to achieve your goals</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-amber-400 font-bold mt-0.5">&#10003;</span>
+                                <span>Get your first actionable homework</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-amber-400 font-bold mt-0.5">&#10003;</span>
+                                <span>Experience my teaching approach and modern tools I use</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap items-center gap-3.5">
+                            <a href="https://calendar.app.google/2m3gF5rvLZJniXkaA" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-wood-950 font-bold rounded-xl ember-glow transition text-base">
+                                Book £5 Strategy Session &rarr;
+                            </a>
+                            <a href="https://t.me/peterguitarist" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 bg-white/5 hover:bg-white/10 text-wood-100 font-medium rounded-xl border border-amber-500/25 transition text-sm">
+                                Ask on Telegram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Portrait Photo in Warm Wood Frame -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <div class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-amber-600/30 via-amber-400/10 to-transparent blur-xl"></div>
+                        <div class="relative rounded-2xl overflow-hidden border-2 border-amber-500/30 shadow-2xl bg-wood-900">
+                            <img src="chocolate-back.jpg" alt="Peter — Certified Guitar Teacher in Macclesfield" class="w-full h-[460px] sm:h-[510px] object-cover object-top">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-wood-950 via-wood-950/80 to-transparent p-5">
+                                <p class="font-serif text-xl font-bold text-white">Peter Yurych</p>
+                                <p class="text-xs text-amber-300/90 uppercase tracking-wider mt-0.5">10+ Years Teaching Experience &bull; Macclesfield, UK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Presentation Section (Right Below Hero) -->
+    <section id="video-intro" class="py-14 md:py-20 bg-wood-900 text-wood-100 border-b border-amber-500/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-400">90-Second Introduction</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">Hear How I Play &amp; See How We Learn</h2>
+                <p class="text-wood-200/80 text-sm sm:text-base mt-2">
+                    A quick personal presentation of my teaching style, the instruments I teach, and a glimpse of my playing.
+                </p>
+            </div>
+
+            <div class="relative rounded-2xl overflow-hidden border-2 border-amber-500/35 shadow-2xl bg-wood-950 aspect-video">
+                <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/T3onhd7J3ck"
+                    title="Peter's Guitar Class — Introduction & Playing"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="https://calendar.app.google/2m3gF5rvLZJniXkaA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-wood-950 font-bold rounded-xl shadow-lg transition">
+                    Claim Your £5 Strategy Session &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instruments You Can Learn (With Custom Guitar Photography) -->
+    <section id="lessons" class="py-16 md:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-xs font-bold uppercase tracking-widest text-ember-600">Curriculum</span>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-wood-900 mt-2">Instruments You Can Learn</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Acoustic Guitar -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-wood-200 shadow-sm hover:shadow-xl transition group">
+                <div class="h-56 overflow-hidden bg-wood-900">
+                    <img src="hero-1%20hands.jpg" alt="Acoustic Guitar — Classical, Steel-string, and Percussion Fingerstyle" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-7">
+                    <h3 class="font-serif text-2xl font-bold text-wood-900 mb-2">Acoustic Guitar</h3>
+                    <p class="text-wood-700 leading-relaxed text-sm sm:text-base">
+                        Classical, Steel-string, and Percussion Fingerstyle.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Electric Guitar -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-wood-200 shadow-sm hover:shadow-xl transition group">
+                <div class="h-56 overflow-hidden bg-wood-900">
+                    <img src="hero-2%20BW%20Silent.jpg" alt="Electric Guitar — Pick technique, soloing, and improvisation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-7">
+                    <h3 class="font-serif text-2xl font-bold text-wood-900 mb-2">Electric Guitar</h3>
+                    <p class="text-wood-700 leading-relaxed text-sm sm:text-base">
+                        Pick technique, soloing, and improvisation across Rock, Jazz, Pop, Funk, etc.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ukulele -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-wood-200 shadow-sm hover:shadow-xl transition group">
+                <div class="h-56 overflow-hidden bg-wood-900">
+                    <img src="hero-3%20Couch%20Classical.jpg" alt="Ukulele — Playing instrumental pieces and songs with chords" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-7">
+                    <h3 class="font-serif text-2xl font-bold text-wood-900 mb-2">Ukulele</h3>
+                    <p class="text-wood-700 leading-relaxed text-sm sm:text-base">
+                        Playing instrumental pieces and songs with chords.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes Learning With Me Different -->
+    <section id="approach" class="py-16 md:py-24 bg-wood-100/70 border-y border-wood-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-ember-600">Methodology</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-wood-900 mt-2">What Makes Learning With Me Different</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white rounded-2xl p-8 border border-wood-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-lg bg-wood-900 text-amber-400 font-serif font-bold text-xl flex items-center justify-center mb-5">01</div>
+                    <h3 class="font-serif text-2xl font-bold text-wood-900 mb-3">Proven, Structured Approach</h3>
+                    <p class="text-wood-700 text-sm leading-relaxed mb-3">
+                        No guesswork — every lesson follows a clear, comprehensive methodology tailored to your goals.
+                    </p>
+                    <p class="text-wood-700 text-sm leading-relaxed">
+                        Backed by years of experience, I use battle-tested techniques designed for different types of students to ensure your success.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-wood-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-lg bg-wood-900 text-amber-400 font-serif font-bold text-xl flex items-center justify-center mb-5">02</div>
+                    <h3 class="font-serif text-2xl font-bold text-wood-900 mb-3">A Custom Audio Library</h3>
+                    <p class="text-wood-700 text-sm leading-relaxed">
+                        Access to the huge recorded collection of compositions to listen to and choose from, so you always play music you enjoy.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-wood-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-lg bg-wood-900 text-amber-400 font-serif font-bold text-xl flex items-center justify-center mb-5">03</div>
+                    <h3 class="font-serif text-2xl font-bold text-wood-900 mb-3">Never Wonder What to Practice Today</h3>
+                    <p class="text-wood-700 text-sm mb-3">After every session, you get a clear detailed summary including:</p>
+                    <ol class="space-y-2 text-sm text-wood-800 list-decimal list-inside">
+                        <li><strong class="text-wood-950">Main Topics &amp; Concepts:</strong> general ideas and key takeaways.</li>
+                        <li><strong class="text-wood-950">Technique:</strong> specific improvements for your playing mechanics.</li>
+                        <li><strong class="text-wood-950">How Music Works:</strong> practical theory.</li>
+                        <li><strong class="text-wood-950">Actionable Homework:</strong> precise tasks with clear instructions.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Beginners vs Advanced with Real Teaching Photos -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Beginners Card -->
+                <div class="wood-surface rounded-2xl overflow-hidden text-wood-100 border border-amber-500/25 shadow-xl flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="tuition-mark.jpg" alt="In-person guitar lesson with young student" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-wood-950 via-wood-950/30 to-transparent"></div>
+                        <span class="absolute bottom-4 left-6 px-3 py-1 rounded-full bg-amber-500 text-wood-950 text-xs font-bold uppercase tracking-wider">Starting Out</span>
+                    </div>
+                    <div class="p-8 flex-1">
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-6">What we focus on for beginners:</h3>
+                        <ul class="space-y-4 text-sm text-wood-200 leading-relaxed">
+                            <li>
+                                <strong class="text-amber-300 block mb-0.5">Real Music from the Start:</strong>
+                                No months of dry drilling exercises or struggling just to shape your fingers for the first chord. We'll play music and I know how to make it manageable.
+                            </li>
+                            <li>
+                                <strong class="text-amber-300 block mb-0.5">Efficient Posture:</strong>
+                                Proper body and hand mechanics that will allow your endless growth.
+                            </li>
+                            <li>
+                                <strong class="text-amber-300 block mb-0.5">Listening Skills:</strong>
+                                Learning what to listen for in order to think like a musician, and how to develop your ear.
+                            </li>
+                            <li>
+                                <strong class="text-amber-300 block mb-0.5">Sound Quality:</strong>
+                                You can play the greatest composition in the world, but with a poor tone, no one will enjoy it. Conversely, with a beautiful tone, even a simple melody is a pleasure to listen to.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Advanced Card -->
+                <div class="bg-white rounded-2xl overflow-hidden text-wood-900 border border-wood-200 shadow-xl flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="Screenshot%20Left%20Hand.jpg" alt="Advanced left-hand guitar technique close-up" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-wood-950/80 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-4 left-6 px-3 py-1 rounded-full bg-wood-900 text-amber-400 border border-amber-500/40 text-xs font-bold uppercase tracking-wider">Next Level</span>
+                    </div>
+                    <div class="p-8 flex-1">
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-wood-900 mb-6">What we focus on for advanced players:</h3>
+                        <ul class="space-y-4 text-sm text-wood-700 leading-relaxed">
+                            <li>
+                                <strong class="text-wood-950 block mb-0.5">Eliminating Blind Spots for Breaking Through Plateaus:</strong>
+                                Identifying and fixing the exact technical or mental blocks that are preventing your growth.
+                            </li>
+                            <li>
+                                <strong class="text-wood-950 block mb-0.5">Tailored Goals &amp; Repertoire:</strong>
+                                Working directly on your specific interests — whether it is improvisation, mastering a particular music style, or crafting your own arrangements.
+                            </li>
+                            <li>
+                                <strong class="text-wood-950 block mb-0.5">Deepening Understanding &amp; Freedom:</strong>
+                                Enhancing your music comprehension and physical control so you feel absolute freedom and confidence with the instrument.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready to Start CTA Banner -->
+    <section class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="wood-surface rounded-3xl p-8 sm:p-12 text-center text-white relative overflow-hidden border border-amber-500/30 shadow-2xl">
+            <div class="max-w-2xl mx-auto space-y-5 relative z-10">
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold">Ready to start?</h2>
+                <p class="text-amber-400 font-medium text-lg">What my students say about the lessons</p>
+                <p class="text-wood-200 text-base leading-relaxed">
+                    If you have the will, I'll show you the way! If you have any questions, don't hesitate to contact me.
+                </p>
+                <div class="flex flex-wrap justify-center gap-3.5 pt-3">
+                    <a href="https://calendar.app.google/2m3gF5rvLZJniXkaA" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-wood-950 font-bold rounded-xl ember-glow transition">
+                        Book £5 Strategy Session
+                    </a>
+                    <a href="https://t.me/peterguitarist" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 bg-white/10 hover:bg-white/15 text-white font-medium rounded-xl border border-amber-500/25 transition">
+                        Telegram
+                    </a>
+                    <a href="https://wa.me/447818071120" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 bg-white/10 hover:bg-white/15 text-white font-medium rounded-xl border border-amber-500/25 transition">
+                        WhatsApp
+                    </a>
+                    <a href="mailto:peterguitarclass@gmail.com" class="px-5 py-3.5 bg-white/10 hover:bg-white/15 text-white font-medium rounded-xl border border-amber-500/25 transition">
+                        Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me (With Studio Lesson Photo) -->
+    <section id="about" class="py-16 md:py-24 bg-white border-y border-wood-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <div class="rounded-2xl overflow-hidden border-2 border-wood-200 shadow-xl">
+                        <img src="guitar%20lesson%20yana.jpg" alt="Peter teaching a guitar lesson in his studio" class="w-full h-[420px] object-cover">
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="text-xs font-bold uppercase tracking-widest text-ember-600">Your Teacher</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-wood-900">About Me</h2>
+
+                    <div class="space-y-4 text-wood-700 leading-relaxed text-base sm:text-lg">
+                        <p>
+                            Hello! I am a certified music teacher and guitarist with over 10 years of teaching experience and extensive performance experience playing in bands (rock, jazz, pop). My background also includes solo classical performances, composing music for games and song arranging.
+                        </p>
+                        <p>
+                            A good musician isn't always a good teacher — that's why I've put a lot of effort into understanding how people learn best. I've always been genuinely interested in pedagogy and child psychology, and I combine the best of traditional methodologies with modern trends to make learning structured, engaging, and effective!
+                        </p>
+                        <p>
+                            I've also created an extensive library of learning materials and audio demos, so you can listen, pick the pieces you actually love, and shape your own repertoire for developing and/or performing. When you play music that inspires you, progress happens naturally!
+                        </p>
+                    </div>
+
+                    <div class="pt-3">
+                        <div class="inline-block pyrography-plaque px-6 py-3.5 rounded-xl">
+                            <p class="font-serif italic text-2xl text-amber-300 font-semibold">
+                                &ldquo;Your progress is my passion.&rdquo;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fees, Terms & Conditions -->
+    <section id="fees" class="py-16 md:py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-ember-600">Pricing &amp; Policy</span>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-wood-900 mt-2">Fees, Terms &amp; Conditions</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+            <div class="bg-white p-7 rounded-2xl border border-wood-200 shadow-sm">
+                <h3 class="font-serif text-2xl font-bold text-wood-900 mb-2">How much?</h3>
+                <p class="text-wood-700 text-sm sm:text-base leading-relaxed">
+                    Standard 45-minute session is <strong class="text-wood-950">£30</strong> (60-minute and 30-minute sessions are available as well).
+                </p>
+            </div>
+
+            <div class="bg-white p-7 rounded-2xl border border-wood-200 shadow-sm">
+                <h3 class="font-serif text-2xl font-bold text-wood-900 mb-2">When?</h3>
+                <p class="text-wood-700 text-sm sm:text-base leading-relaxed">
+                    Monthly in advance, on the 1st of each month.
+                </p>
+            </div>
+
+            <div class="bg-white p-7 rounded-2xl border border-wood-200 shadow-sm">
+                <h3 class="font-serif text-2xl font-bold text-wood-900 mb-2">Student can't attend a lesson?</h3>
+                <p class="text-wood-700 text-sm sm:text-base leading-relaxed">
+                    Rescheduling is very easy — see my <a href="https://calendar.app.google/2m3gF5rvLZJniXkaA" target="_blank" rel="noopener noreferrer" class="text-ember-600 underline font-semibold hover:text-ember-700">available slots here</a>. I will do my best to reschedule the lesson, but I cannot guarantee it. Therefore, the lesson fee may be forfeited, especially for cancellations made later than 24 hours before the scheduled lesson.
+                </p>
+            </div>
+
+            <div class="bg-white p-7 rounded-2xl border border-wood-200 shadow-sm">
+                <h3 class="font-serif text-2xl font-bold text-wood-900 mb-2">Teacher can't provide a lesson?</h3>
+                <p class="text-wood-700 text-sm sm:text-base leading-relaxed">
+                    In that case I will either reschedule it or provide a full refund for that session.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (With Online Setup Photo) -->
+    <section id="faq" class="py-16 md:py-24 bg-wood-100/70 border-t border-wood-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-ember-600">Questions &amp; Answers</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-wood-900 mt-2">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 with Online Setup Image -->
+                <details class="group bg-white rounded-2xl border border-wood-200 p-6 shadow-sm" open>
+                    <summary class="flex justify-between items-center font-serif text-xl sm:text-2xl font-bold text-wood-900 cursor-pointer">
+                        <span>What should I prepare for online lessons?</span>
+                        <span class="ml-4 text-ember-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="mt-5 text-sm sm:text-base text-wood-700 leading-relaxed border-t border-wood-200 pt-5 grid md:grid-cols-12 gap-6 items-start">
+                        <div class="md:col-span-7 space-y-3">
+                            <p>Firstly, all you really need is a laptop — it's the ideal choice. A tablet works as well, but it is much harder to position at the correct camera angle without a dedicated stand, whereas a laptop screen adjusts effortlessly. Mobile phones will not work because the screen is too small, and you will likely struggle to see the learning materials I share during the lesson.</p>
+                            <p class="font-semibold text-wood-950">Before every meeting:</p>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>Sit on a stable, knee-high chair without wheels or armrests. Use a footstool if needed.</li>
+                                <li>Check your guitar tuning and tune it if necessary.</li>
+                                <li>Position your camera correctly:
+                                    <ul class="list-disc list-inside pl-5 mt-1 space-y-1 text-wood-600">
+                                        <li>Place your laptop so that the camera is at chest height.</li>
+                                        <li>Sit facing the camera so that both your entire guitar and your face are visible.</li>
+                                        <li>Slightly turn your chair and body to the right, ensuring your left hand is closer to the camera than your right.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <p class="italic text-wood-600">P.S. The best lighting comes from a window or a lamp positioned in front of you. Avoid having light sources behind or to the side of you.</p>
+                        </div>
+                        <div class="md:col-span-5">
+                            <div class="rounded-xl overflow-hidden border border-wood-200 shadow-md">
+                                <img src="Screenshot%20Headphones.jpg" alt="Ideal online guitar lesson setup with laptop and proper posture" class="w-full h-auto object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group bg-white rounded-2xl border border-wood-200 p-6 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif text-xl sm:text-2xl font-bold text-wood-900 cursor-pointer">
+                        <span>Might online lessons be really effective?</span>
+                        <span class="ml-4 text-ember-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="mt-4 text-sm sm:text-base text-wood-700 space-y-3 leading-relaxed border-t border-wood-200 pt-4">
+                        <p>I have fully adapted my teaching methods to the online environment, utilising modern digital tools and resources to maximise the effectiveness and interactivity of every lesson.</p>
+                        <p>During our sessions, you won't even need to touch your computer — everything you need will be clearly displayed on the screen from my side.</p>
+                        <p>Having tested numerous tools, I have developed methods that make online learning just as effective as in-person lessons. For instance, I've built a substantial library of engaging, expressive musical pieces and a digital database of recorded backing tracks that I can easily share with my students. This resource allows my students to actively participate in selecting the music they wish to learn and play "with me" just like you would in person, fostering greater motivation and deeper engagement.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group bg-white rounded-2xl border border-wood-200 p-6 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif text-xl sm:text-2xl font-bold text-wood-900 cursor-pointer">
+                        <span>How the learning process, access to the materials and libraries is implemented?</span>
+                        <span class="ml-4 text-ember-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="mt-4 text-sm sm:text-base text-wood-700 space-y-3 leading-relaxed border-t border-wood-200 pt-4">
+                        <p>To make your learning experience as smooth, organized, and effective as possible, I use Telegram as our primary Learning Hub.</p>
+                        <p>Unlike traditional messengers or emails where files get lost in clutter, Telegram allows us to keep your entire learning ecosystem in one clear, easily searchable space.</p>
+                        <p class="font-semibold text-wood-950">Here is how it powers your guitar journey with me:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong>Your Personal Homework Archive:</strong> Every assignment, tab, and lesson note is tagged with your personalized hashtag (e.g., <code class="bg-wood-100 px-1.5 py-0.5 rounded">#hwYourName</code>). With just one click on the hashtag, you can instantly find your complete practice history and track your progress over time.</li>
+                            <li><strong>Exclusive Backing Track Libraries:</strong> Gain instant access to curated channels filled with high-quality backing tracks to practice jam sessions anytime.</li>
+                            <li><strong>Comprehensive Learning Audio Library:</strong> Access organized channels dedicated to specific playing techniques:
+                                <ul class="list-circle list-inside pl-5 mt-1 space-y-1 text-wood-600">
+                                    <li>Fingerstyle / Acoustic Guitar Compositions.</li>
+                                    <li>Plectrum / Electric Guitar Compositions.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Seamless Media Sharing:</strong> High-quality audio messages, video breakdowns of tricky riffs, tabs, and sheet music are stored in the cloud — without eating up storage space on your phone.</li>
+                        </ul>
+                        <p>Setting up Telegram takes less than two minutes, and it ensures that all your practice materials, tracks, and notes are always in your pocket, ready whenever you pick up your guitar!</p>
+                        <p>So, connect me via Telegram by the link: <a href="https://t.me/peterguitarist" target="_blank" rel="noopener noreferrer" class="text-ember-600 font-semibold underline hover:text-ember-700">https://t.me/peterguitarist</a></p>
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group bg-white rounded-2xl border border-wood-200 p-6 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif text-xl sm:text-2xl font-bold text-wood-900 cursor-pointer">
+                        <span>Should I buy some books for learning?</span>
+                        <span class="ml-4 text-ember-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="mt-4 text-sm sm:text-base text-wood-700 leading-relaxed border-t border-wood-200 pt-4">
+                        <p>I have a vast library of compositions with different genres and I provide all the materials you need - sheet music, schemes, exercises, pictures. And you'll have your own album with music you choose and play - it's just a custom personalised book which will stay with you forever.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 5 -->
+                <details class="group bg-white rounded-2xl border border-wood-200 p-6 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif text-xl sm:text-2xl font-bold text-wood-900 cursor-pointer">
+                        <span>How long does it take to learn to play the guitar?</span>
+                        <span class="ml-4 text-ember-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="mt-4 text-sm sm:text-base text-wood-700 space-y-3 leading-relaxed border-t border-wood-200 pt-4">
+                        <p>The honest answer is: it depends entirely on your goals and your approach. There is no single timeline because "being able to play" means something different to everyone — whether your dream is strumming basic chords along with your favorite songs, playing Beethoven's Moonlight Sonata, or mastering jazz improvisation.</p>
+                        <p>How fast you progress comes down to a unique mix of factors: your natural physical and musical coordination, your ability to focus, and most importantly, your drive and time management. What one student grasps in their very first lesson might take another a year of steady work.</p>
+                        <p>As a teacher, I don't just train naturally gifted musicians; my mission is to turn anyone into a strong, confident player. While I cannot give you a magic number of months, I ensure your success by providing a crystal-clear, step-by-step practice plan after every single lesson.</p>
+                        <p class="font-semibold text-wood-950">Remember my golden rule: "Today is the only day you can practice." Consistency beats everything else.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 6 -->
+                <details class="group bg-white rounded-2xl border border-wood-200 p-6 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif text-xl sm:text-2xl font-bold text-wood-900 cursor-pointer">
+                        <span>Should I come with my instrument?</span>
+                        <span class="ml-4 text-ember-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="mt-4 text-sm sm:text-base text-wood-700 space-y-3 leading-relaxed border-t border-wood-200 pt-4">
+                        <p>Not necessarily. I have guitars and all the necessary equipment available during the lesson. However, most students prefer to bring their own instruments because they are already used to the feel of them.</p>
+                        <p>For our first meeting, it's best to come with your own instrument if you have one. This allows me to evaluate how well it suits you, check its setup condition, and address other technical nuances.</p>
+                        <p>If this is your very first lesson and you don't own a guitar yet, you can absolutely come without one. Be ready to buy one in the following days; during our first session, I will give you all the advice you need so you know exactly what to buy to achieve your goals.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Booking Calendar Embed -->
+    <footer id="book" class="wood-surface text-wood-200 pt-16 pb-12 border-t border-amber-500/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-10 pb-12 border-b border-amber-500/15">
+                <div class="space-y-4">
+                    <img src="LogoPGC-Transparent-White.png" alt="Peter's Guitar Class" class="h-12 w-auto object-contain">
+                    <p class="text-wood-200/80 text-sm max-w-md leading-relaxed">
+                        Guitar &amp; Ukulele lessons in Macclesfield, Cheshire, UK &amp; Online via Zoom.
+                    </p>
+                    <div class="space-y-2 text-sm pt-2">
+                        <p>
+                            <span class="text-wood-200/60">Telegram:</span>
+                            <a href="https://t.me/peterguitarist" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline ml-1">https://t.me/peterguitarist</a>
+                        </p>
+                        <p>
+                            <span class="text-wood-200/60">WhatsApp:</span>
+                            <a href="https://wa.me/447818071120" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline ml-1">+44 7818 071120</a>
+                        </p>
+                        <p>
+                            <span class="text-wood-200/60">Email:</span>
+                            <a href="mailto:peterguitarclass@gmail.com" class="text-amber-400 hover:underline ml-1">peterguitarclass@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="wood-card rounded-2xl p-7 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-2">Book Your Lesson or £5 Strategy Session</h3>
+                        <p class="text-sm text-wood-200/80 mb-6">
+                            Pick a convenient date and time directly in my Google Calendar booking page.
+                        </p>
+                    </div>
+                    <a href="https://calendar.app.google/2m3gF5rvLZJniXkaA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3.5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-wood-950 font-bold rounded-xl ember-glow transition text-sm">
+                        Open Booking Calendar &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-wood-200/50 gap-4">
+                <p>&copy; 2026 Peter's Guitar Class. Macclesfield, Cheshire, UK.</p>
+                <p>peterguitarclass.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
