@@ -79,40 +79,100 @@
     </header>
 
     <!-- Main Confirmation Card -->
-    <main class="max-w-2xl mx-auto px-4 sm:px-6 py-16 w-full">
-        <div class="wood-card rounded-3xl p-8 sm:p-12 text-center space-y-6">
+    <main class="max-w-2xl mx-auto px-4 sm:px-6 py-12 sm:py-16 w-full">
+        <div class="wood-card rounded-3xl p-6 sm:p-11 text-center space-y-6">
             <div class="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-400 flex items-center justify-center mx-auto text-3xl shadow-lg">
                 &#10003;
             </div>
 
             <div class="space-y-2">
                 <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Lesson Booking &amp; Rescheduling</span>
-                <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white">You're All Set!</h1>
+                <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white">Your Lesson Slot Is Reserved!</h1>
             </div>
 
             <p class="text-wood-200/90 text-base sm:text-lg leading-relaxed">
-                Your lesson has been successfully booked or rescheduled. A calendar invitation with your Zoom link (or Macclesfield studio details) has just been sent to your email.
+                Your lesson has been successfully booked or rescheduled, and a calendar invitation has just been sent to your email.
             </p>
 
-            <div class="bg-wood-950/70 rounded-2xl p-6 border border-amber-500/20 text-left space-y-3 text-sm text-wood-200">
+            <!-- Payment Confirmation Box for Non-Prepaid Lessons -->
+            <div class="bg-wood-950/85 rounded-2xl p-6 border border-amber-400/40 text-left space-y-5 shadow-inner">
+                <div class="space-y-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-wider">
+                        Payment Info &bull; £30 Standard Lesson
+                    </div>
+                    <h2 class="font-serif text-2xl font-bold text-white">Booking a non-prepaid lesson?</h2>
+                    <p class="text-sm text-wood-200/90 leading-relaxed">
+                        If this lesson is <strong class="text-white">not covered by a prepaid monthly plan</strong> (or a rescheduled prepaid slot), please transfer <strong class="text-amber-300">£30</strong> using the bank details below to confirm your spot.
+                    </p>
+                </div>
+
+                <!-- Bank Details with Copy Buttons -->
+                <div class="space-y-3 pt-1">
+                    <!-- Name on the account -->
+                    <div class="flex items-center justify-between gap-3 bg-wood-900/90 border border-amber-500/20 rounded-xl px-4 py-3">
+                        <div>
+                            <span class="block text-[11px] uppercase tracking-wider text-wood-200/60">Name on the account</span>
+                            <span class="font-semibold text-white text-sm sm:text-base">Petro Yurych</span>
+                        </div>
+                        <button type="button" onclick="copyText('Petro Yurych', this)" class="px-3.5 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/35 text-amber-300 text-xs font-bold transition flex items-center gap-1.5 shrink-0">
+                            <span>Copy</span>
+                        </button>
+                    </div>
+
+                    <!-- Sort code -->
+                    <div class="flex items-center justify-between gap-3 bg-wood-900/90 border border-amber-500/20 rounded-xl px-4 py-3">
+                        <div>
+                            <span class="block text-[11px] uppercase tracking-wider text-wood-200/60">Sort code</span>
+                            <span class="font-mono font-semibold text-white text-sm sm:text-base tracking-wide">77-67-08</span>
+                        </div>
+                        <button type="button" onclick="copyText('77-67-08', this)" class="px-3.5 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/35 text-amber-300 text-xs font-bold transition flex items-center gap-1.5 shrink-0">
+                            <span>Copy</span>
+                        </button>
+                    </div>
+
+                    <!-- Account number -->
+                    <div class="flex items-center justify-between gap-3 bg-wood-900/90 border border-amber-500/20 rounded-xl px-4 py-3">
+                        <div>
+                            <span class="block text-[11px] uppercase tracking-wider text-wood-200/60">Account number</span>
+                            <span class="font-mono font-semibold text-white text-sm sm:text-base tracking-wide">46708668</span>
+                        </div>
+                        <button type="button" onclick="copyText('46708668', this)" class="px-3.5 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/35 text-amber-300 text-xs font-bold transition flex items-center gap-1.5 shrink-0">
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="pt-4 mt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-t border-amber-500/15">
+                    <p class="text-xs text-wood-200/75">
+                        Pay <strong class="text-white">£30</strong> using these details or message me directly on WhatsApp:
+                    </p>
+                    <a href="https://wa.me/447818071120?text=Hi%20Peter!%20I%20just%20booked%20a%20%C2%A330%20lesson." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow transition shrink-0">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Message on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Preparation Checklist -->
+            <div class="bg-wood-950/60 rounded-2xl p-6 border border-amber-500/15 text-left space-y-3 text-sm text-wood-200">
                 <p class="font-serif text-xl font-bold text-amber-300">Quick reminder:</p>
                 <ul class="space-y-2.5">
                     <li class="flex items-start gap-2.5">
                         <span class="text-amber-400 font-bold">1.</span>
-                        <span><strong>Check your inbox:</strong> Confirm the calendar update so it locks into your schedule.</span>
+                        <span><strong>Check your inbox:</strong> Confirm the calendar update so it locks into your schedule (check Spam/Promotions just in case).</span>
                     </li>
                     <li class="flex items-start gap-2.5">
                         <span class="text-amber-400 font-bold">2.</span>
-                        <span><strong>For Online (Zoom):</strong> Ensure your laptop/tablet camera is positioned correctly at chest height.</span>
+                        <span><strong>For Online (Zoom):</strong> Use a laptop or tablet at chest height so both your guitar and hands are clearly visible.</span>
                     </li>
                     <li class="flex items-start gap-2.5">
                         <span class="text-amber-400 font-bold">3.</span>
-                        <span><strong>Instrument &amp; Equipment:</strong> Have your instrument tuned and ready before the session begins.</span>
+                        <span><strong>Your instrument:</strong> Have your guitar or ukulele tuned and ready before the session begins.</span>
                     </li>
                 </ul>
             </div>
 
-            <div class="pt-4 flex flex-wrap justify-center gap-4">
+            <div class="pt-2 flex flex-wrap justify-center gap-4">
                 <a href="index.html" class="px-6 py-3.5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-wood-950 font-bold rounded-xl ember-glow transition text-sm">
                     Return to Website
                 </a>
@@ -128,5 +188,21 @@
         <p>&copy; 2026 Peter's Guitar Class. Macclesfield, Cheshire, UK.</p>
     </footer>
 
+    <script>
+        function copyText(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
+                const label = btn.querySelector('span');
+                const original = label.textContent;
+                label.textContent = 'Copied!';
+                btn.classList.add('bg-emerald-500/25', 'border-emerald-400/50', 'text-emerald-300');
+                btn.classList.remove('bg-amber-500/20', 'border-amber-400/35', 'text-amber-300');
+                setTimeout(() => {
+                    label.textContent = original;
+                    btn.classList.remove('bg-emerald-500/25', 'border-emerald-400/50', 'text-emerald-300');
+                    btn.classList.add('bg-amber-500/20', 'border-amber-400/35', 'text-amber-300');
+                }, 1800);
+            });
+        }
+    </script>
 </body>
 </html>
