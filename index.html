@@ -90,25 +90,55 @@
     <!-- Top Navigation -->
     <header class="sticky top-0 z-50 bg-wood-950/95 backdrop-blur-md border-b border-amber-500/20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-24">
+            <div class="flex justify-between items-center h-20 sm:h-24">
                 <a href="#" class="flex items-center group py-2">
-                    <img src="LogoPGC-Transparent-White.png" alt="Peter's Guitar Class Logo" class="h-14 sm:h-16 md:h-[68px] w-auto object-contain transition duration-300 group-hover:opacity-90">
+                    <img src="LogoPGC-Transparent-White.png" alt="Peter's Guitar Class Logo" class="h-12 sm:h-16 md:h-[68px] w-auto object-contain transition duration-300 group-hover:opacity-90">
                 </a>
 
-                <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-wood-200/80">
+                <nav class="hidden md:flex items-center gap-6 lg:gap-7 text-sm font-medium text-wood-200/80">
                     <a href="#lessons" class="hover:text-ember-400 transition">Instruments</a>
-                    <a href="#approach" class="hover:text-ember-400 transition">Methodology</a>
+                    <a href="#approach" class="hover:text-ember-400 transition">What You Get</a>
+                    <a href="#levels" class="hover:text-ember-400 transition">Your Level</a>
                     <a href="#about" class="hover:text-ember-400 transition">About Me</a>
                     <a href="#reviews" class="hover:text-ember-400 transition">Reviews</a>
                     <a href="#fees" class="hover:text-ember-400 transition">Fees</a>
                     <a href="#faq" class="hover:text-ember-400 transition">FAQ</a>
                 </nav>
 
-                <div class="flex items-center gap-3">
-                    <a href="book-session.html" class="cursor-pointer inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-wood-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded-lg shadow-md transition">
+                <div class="flex items-center gap-2.5 sm:gap-3">
+                    <a href="book-session.html" class="cursor-pointer inline-flex items-center justify-center px-3.5 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-bold text-wood-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded-lg shadow-md transition">
                         Book £9 Session
                     </a>
+
+                    <!-- Mobile Burger Button -->
+                    <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center p-2.5 rounded-lg text-wood-200 hover:text-amber-300 hover:bg-white/10 border border-amber-500/25 transition">
+                        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
                 </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-wood-950 border-t border-amber-500/20 px-4 pt-3 pb-6 space-y-1 shadow-2xl">
+            <a href="#lessons" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-wood-100 hover:bg-white/5 hover:text-amber-300 transition">Instruments</a>
+            <a href="#approach" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-wood-100 hover:bg-white/5 hover:text-amber-300 transition">What You Get</a>
+            <a href="#levels" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-wood-100 hover:bg-white/5 hover:text-amber-300 transition">Your Level</a>
+            <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-wood-100 hover:bg-white/5 hover:text-amber-300 transition">About Me</a>
+            <a href="#reviews" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-wood-100 hover:bg-white/5 hover:text-amber-300 transition">Reviews</a>
+            <a href="#fees" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-wood-100 hover:bg-white/5 hover:text-amber-300 transition">Fees &amp; Policy</a>
+            <a href="#faq" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-wood-100 hover:bg-white/5 hover:text-amber-300 transition">FAQ</a>
+            <div class="pt-3 border-t border-amber-500/15 flex flex-col gap-2.5">
+                <a href="book-session.html" class="w-full text-center py-3 bg-gradient-to-r from-amber-400 to-amber-500 text-wood-950 font-bold rounded-xl text-sm shadow">
+                    Book £9 Strategy Session &rarr;
+                </a>
+                <a href="book-lesson.html" class="w-full text-center py-2.5 bg-white/5 text-amber-300 border border-amber-500/30 font-semibold rounded-xl text-sm">
+                    Book / Reschedule Lesson
+                </a>
             </div>
         </div>
     </header>
@@ -260,28 +290,34 @@
         </div>
     </section>
 
-    <!-- What Makes Learning With Me Different -->
+    <!-- What You Get From Lessons -->
     <section id="approach" class="py-16 md:py-24 bg-wood-100/70 border-y border-wood-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-ember-600">Methodology</span>
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-ember-600">What You Get</span>
                 <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-wood-900 mt-2">What Makes Learning With Me Different</h2>
             </div>
 
-            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+            <div class="grid lg:grid-cols-3 gap-8 mb-20">
                 <div class="bg-white rounded-2xl p-8 border border-wood-200 shadow-sm">
-                    <div class="w-10 h-10 rounded-lg bg-wood-900 text-amber-400 font-serif font-bold text-xl flex items-center justify-center mb-5">01</div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="font-serif italic font-bold text-2xl text-ember-600">01.</span>
+                        <span class="h-px flex-1 bg-wood-200"></span>
+                    </div>
                     <h3 class="font-serif text-2xl font-bold text-wood-900 mb-3">Proven, Structured Approach</h3>
                     <p class="text-wood-700 text-sm leading-relaxed mb-3">
-                        No guesswork — every lesson follows a clear, comprehensive methodology tailored to your goals.
+                        No guesswork — instead of throwing overwhelming tasks at you, I match every step to your exact current ability so each challenge is achievable and rewarding.
                     </p>
                     <p class="text-wood-700 text-sm leading-relaxed">
-                        Backed by years of experience, I use battle-tested techniques designed for different types of students to ensure your success.
+                        We build your skills and musical understanding in the right logical order, where every mastered piece unlocks the next level of confidence and freedom.
                     </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 border border-wood-200 shadow-sm">
-                    <div class="w-10 h-10 rounded-lg bg-wood-900 text-amber-400 font-serif font-bold text-xl flex items-center justify-center mb-5">02</div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="font-serif italic font-bold text-2xl text-ember-600">02.</span>
+                        <span class="h-px flex-1 bg-wood-200"></span>
+                    </div>
                     <h3 class="font-serif text-2xl font-bold text-wood-900 mb-3">A Custom Audio Library</h3>
                     <p class="text-wood-700 text-sm leading-relaxed">
                         Access to the huge recorded collection of compositions to listen to and choose from, so you always play music you enjoy.
@@ -289,7 +325,10 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 border border-wood-200 shadow-sm">
-                    <div class="w-10 h-10 rounded-lg bg-wood-900 text-amber-400 font-serif font-bold text-xl flex items-center justify-center mb-5">03</div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="font-serif italic font-bold text-2xl text-ember-600">03.</span>
+                        <span class="h-px flex-1 bg-wood-200"></span>
+                    </div>
                     <h3 class="font-serif text-2xl font-bold text-wood-900 mb-3">Never Wonder What to Practice Today</h3>
                     <p class="text-wood-700 text-sm mb-3">After every session, you get a clear detailed summary including:</p>
                     <ol class="space-y-2 text-sm text-wood-800 list-decimal list-inside">
@@ -299,6 +338,12 @@
                         <li><strong class="text-wood-950">Actionable Homework:</strong> precise tasks with clear instructions.</li>
                     </ol>
                 </div>
+            </div>
+
+            <!-- Choose Your Level Heading -->
+            <div id="levels" class="text-center max-w-2xl mx-auto mb-12 scroll-mt-28">
+                <span class="text-xs font-bold uppercase tracking-widest text-ember-600">Tailored To Your Experience</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-wood-900 mt-2">Choose Your Level</h2>
             </div>
 
             <!-- Beginners vs Advanced -->
@@ -939,5 +984,31 @@
 
 
         
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function toggleMobileMenu() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden', !isHidden);
+            iconClose.classList.toggle('hidden', isHidden);
+            mobileMenuBtn.setAttribute('aria-expanded', String(isHidden));
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -60,9 +60,6 @@
             border: 1px solid rgba(217, 119, 6, 0.25);
             box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(251, 191, 36, 0.12);
         }
-        .ember-glow {
-            box-shadow: 0 0 30px rgba(217, 119, 6, 0.35);
-        }
     </style>
 </head>
 <body class="wood-surface text-wood-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-ember-500 selection:text-white">
@@ -80,18 +77,18 @@
     </header>
 
     <!-- Main Booking Section -->
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 w-full flex-1">
-        <div class="wood-card rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6">
-            <div class="text-center space-y-2">
+    <main class="max-w-4xl mx-auto px-2 sm:px-6 py-6 sm:py-12 w-full flex-1">
+        <div class="wood-card rounded-2xl sm:rounded-3xl px-2 pt-6 pb-4 sm:p-10 shadow-2xl space-y-6">
+            <div class="text-center space-y-2 px-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Booking Form</span>
                 <h1 class="font-serif text-3xl sm:text-4xl font-bold text-white">Book Your £9 Strategy Session</h1>
                 <p class="text-wood-200 text-sm sm:text-base max-w-xl mx-auto">
-                    Select a convenient date and time below to lock in your session with Peter.
+                    Select a convenient date and time below to reserve your session with Peter.
                 </p>
             </div>
 
-            <!-- Cal inline embed code -->
-            <div class="bg-wood-950 rounded-2xl p-4 border border-amber-500/20 overflow-hidden" style="min-height: 650px;">
+            <!-- Cal inline embed code (clean, full-width without extra wrapper frame) -->
+            <div class="w-full overflow-hidden rounded-xl" style="min-height: 620px;">
                 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-peterguitarclass"></div>
             </div>
         </div>
@@ -115,24 +112,20 @@
         calLink: "peterguitarclass/peterguitarclass",
       });
 
-      Cal.ns.peterguitarclass("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+      Cal.ns.peterguitarclass("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#1C130D"},"dark":{"cal-brand":"#D97706"}},"hideEventTypeDetails":true,"layout":"month_view"});
       
       Cal.ns.peterguitarclass("on", {
-        action: "bookingSuccessfulV2",
+        action: "bookingSuccessful",
         callback: (e) => {
-          console.log("Strategy Session booking completed:", e.detail);
+          console.log("Strategy Session reserved:", e.detail);
           if (typeof gtag === 'function') {
-            gtag('event', 'purchase', {
+            gtag('event', 'booking_created', {
               transaction_id: e.detail?.data?.uid || Date.now().toString(),
-              value: 9.00,
-              currency: 'GBP',
-              items: [{ item_name: 'Strategy Session' }]
+              event_name: 'Strategy Session'
             });
           }
           if (typeof fbq === 'function') {
-            fbq('track', 'Purchase', {
-              value: 9.00,
-              currency: 'GBP',
+            fbq('trackCustom', 'BookingCreated', {
               content_name: 'Strategy Session'
             });
           }

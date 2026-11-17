@@ -77,9 +77,9 @@
     </header>
 
     <!-- Main Booking Section -->
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 w-full flex-1">
-        <div class="wood-card rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6">
-            <div class="text-center space-y-2">
+    <main class="max-w-4xl mx-auto px-2 sm:px-6 py-6 sm:py-12 w-full flex-1">
+        <div class="wood-card rounded-2xl sm:rounded-3xl px-2 pt-6 pb-4 sm:p-10 shadow-2xl space-y-6">
+            <div class="text-center space-y-2 px-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Lesson Booking &amp; Rescheduling</span>
                 <h1 class="font-serif text-3xl sm:text-4xl font-bold text-white">Book a Lesson or Reschedule</h1>
                 <p class="text-wood-200 text-sm sm:text-base max-w-xl mx-auto">
@@ -87,8 +87,8 @@
                 </p>
             </div>
 
-            <!-- Cal inline embed code begins -->
-            <div class="bg-wood-950 rounded-2xl p-4 border border-amber-500/20 overflow-hidden" style="min-height: 650px;">
+            <!-- Cal inline embed code (clean, full-width without extra wrapper frame) -->
+            <div class="w-full overflow-hidden rounded-xl" style="min-height: 620px;">
                 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-book-a-lesson"></div>
                 <script type="text/javascript">
                   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
@@ -102,10 +102,10 @@
                     calLink: "peterguitarclass/book-a-lesson",
                   });
 
-                  Cal.ns["book-a-lesson"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+                  Cal.ns["book-a-lesson"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#1C130D"},"dark":{"cal-brand":"#D97706"}},"hideEventTypeDetails":false,"layout":"month_view"});
 
                   Cal.ns["book-a-lesson"]("on", {
-                    action: "bookingSuccessfulV2",
+                    action: "bookingSuccessful",
                     callback: (e) => {
                       setTimeout(() => {
                         window.location.href = 'thank-you-lesson.html';
@@ -114,7 +114,6 @@
                   });
                 </script>
             </div>
-            <!-- Cal inline embed code ends -->
         </div>
     </main>
 
